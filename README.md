@@ -6,11 +6,12 @@ LaTeX kan være en gevaldig hjælp, eller din værste fjende. Sæt dig ind i LaT
 
 # Farvekodet navne
 Det er en god idé at oprette kommandoer for hver vektor, så farvekoder er ens over alt og nemt kan ændres ét sted. En kommando kan oprettes i sin preamble som:
-\newcommand{\NAVN}{{\colorbox{darkred}{\textbf{Vektor Navn}}}\xspace}
-Nu kan kommandoen benyttes som følgende: ``Bilen afhentes af \NAVN og derefter blah...''
+``` \newcommand{\NAVN}{{\colorbox{darkred}{\textbf{Vektor Navn}}}\xspace} ```
+Nu kan kommandoen benyttes som følgende: `Bilen afhentes af \NAVN og derefter blah...`
 
 Her er en god liste over særskilte farver.
 Definer farverne som ``cNAME'', så de nemt kan huskes og bruges andre steder (fx tabeller hvor vektoren har ansvar).
+```
 \definecolor{headline}  {RGB}{ 68, 90,196}
 \definecolor{blue}      {RGB}{ 43,  0,255}
 \definecolor{farve1}    {RGB}{100,230,204} 
@@ -22,3 +23,4 @@ Definer farverne som ``cNAME'', så de nemt kan huskes og bruges andre steder (f
 \definecolor{farve7}    {RGB}{255,153,153} 
 \definecolor{farve8}    {RGB}{255,255,102} 
 \definecolor{farve9}    {RGB}{218,180,142} 
+```
