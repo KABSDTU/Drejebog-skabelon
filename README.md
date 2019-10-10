@@ -1,6 +1,8 @@
 # Drejebogsskabelon
 Udarbejdet af Rasmus Aagaard (s164419) i 2019, med udgangspunkt i og inspiration fra skabelon udarbejdet af Henriette Steenhoff (s134869) i 2015.
 
+Link til en ikke-redigerbar version af skabelonen kan findes på [Overleaf](https://www.overleaf.com/read/shkkbhkmbsqt)
+
 ## Generelt om skabelonen
 Man vil i denne skabelon finde en masse ting, som er specifikt for rusturen, som skabelonen er bygget op efter. Det er tiltænkt at man selvfølgelig læser det kritisk igennem og retter til, så det passer med tidspunkter, fordeling af ansvar, hvilke dage man er afsted osv.
 
