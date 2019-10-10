@@ -24,3 +24,6 @@ Til at lave materialeliste bruges filen `matlist.tex` som findes i `latex/settin
 Der forekommer ofte meget lange tabeller, som der ikke er plads til på en enkelt side. Her kan man bruge `\begin{landscape}` til at få siden til at vende horisontalt frem for vertikalt. 
 
 Det er også en mulighed at gøre teksten mindre ved brug af `\tiny` eller lignende. Det kan stadig godt læses i praksis og navnekoderne hjælper med at finde ud af hvilket hold det er, når man står med et telefon flashlight kl 23:30 om natten på natløb.
+Det er også en mulighed at gøre teksten mindre ved brug af `\tiny` eller lignende. Det kan stadig godt læses i praksis og navnekoderne hjælper med at finde ud af hvilket hold det er, når man står med et telefon flashlight kl 23:30 om natten på natløb.
+
+## Test
