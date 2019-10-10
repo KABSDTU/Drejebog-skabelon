@@ -1,0 +1,51 @@
+\newcount\tempnum
+\gdef\templob{}
+\gdef\lob{}
+\gdef\temppost{}
+\gdef\post{}
+
+\AtEndDocument{
+\pagestyle{empty}}
+\AtEndDocument{
+\twocolumn
+\section{Materialeliste:}}
+
+\newenvironment{mats}[2]{
+\newcommand{\mat}[2]{
+\tempnum=##1
+\ifnum\tempnum=1
+\item ##2
+\else
+\item ##1 x ##2
+\fi
+
+\AtEndDocument{
+\def\lob{#1}
+\def\post{#2}
+\ifx \lob\templob
+	\ifx \post\temppost
+		##1 x ##2 \newline
+	\else
+		\textbf{#2} \\
+		##1 x ##2 \newline
+		\def\temppost{#2}
+	\fi
+\else
+	\subsection{#1}
+		\ifx \post\temppost
+		##1 x ##2 \newline
+	\else
+		\textbf{#2} \\
+		##1 x ##2 \newline
+		\def\temppost{#2}
+	\fi
+	\def\templob{#1}
+\fi
+}
+} 
+\textbf{Materialer til #2}
+\begin{itemize}
+}
+{
+\end{itemize}
+}
