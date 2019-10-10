@@ -26,4 +26,3 @@ Der forekommer ofte meget lange tabeller, som der ikke er plads til på en enkel
 Det er også en mulighed at gøre teksten mindre ved brug af `\tiny` eller lignende. Det kan stadig godt læses i praksis og navnekoderne hjælper med at finde ud af hvilket hold det er, når man står med et telefon flashlight kl 23:30 om natten på natløb.
 Det er også en mulighed at gøre teksten mindre ved brug af `\tiny` eller lignende. Det kan stadig godt læses i praksis og navnekoderne hjælper med at finde ud af hvilket hold det er, når man står med et telefon flashlight kl 23:30 om natten på natløb.
 
-## Test
