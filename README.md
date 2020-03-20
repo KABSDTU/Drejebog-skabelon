@@ -14,7 +14,7 @@ Alle farver til navnekoder er taget fra [latexcolor.com/](http://latexcolor.com/
 En idé kan være at give holdene en navnekode, som er deres tværvektors navnekode, bare med modsat store/små bogstaver. Eksempelvis, hvis vektorens navnekode er `\MEME` ville holdets navnekode være `\meme`, eller omvendt.
 
 ## Kontaktinformation
-Udfyld `latex/forrest/kontaktinfo.tex` med relevant information fra [Studiestartswikien](https://studiestartswiki.pf.dk/rusturshytter:start). Tag evt. inspiration fra tidligere drejebøger, som kan findes nederst på siden for en given hytte.
+Udfyld `latex/forrest/kontaktinfo.tex` med relevant information fra [Studiestartswikien](https://studiestartswiki.pf.dk/da:rusturshytter:start). Tag evt. inspiration fra tidligere drejebøger, som kan findes nederst på siden for en given hytte.
 
 ## Tidsplaner
 Der kan findes et eksempel på en tidsplan i filen `latex/dage/01_ankomst/01_tidsplan.tex`. For at indsætte flere linjer på tidsplanen kan man med fordel sætte sin cursor på en linje i tidsplanen, holde `Shift+Alt` nede og trykke på op eller ned piletasterne. Dette vil kopiere den aktuelle linje.
