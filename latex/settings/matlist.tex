@@ -1,51 +1,52 @@
 \newcount\tempnum
-\gdef\templob{}
-\gdef\lob{}
-\gdef\temppost{}
-\gdef\post{}
+\gdef\tempdag{}
+\gdef\dag{}
+\gdef\tempaktivitet{}
+\gdef\aktivitet{}
 
-\AtEndDocument{
-\pagestyle{empty}}
-\AtEndDocument{
-\twocolumn
-\section{Materialeliste:}}
+\AtBeginDocument{   % Skal kaldes på denne måde, ellers vil den lave newpage 
+    \AtEndDocument{ % mellem \section{Materialeliste:} og første \subsection{#1}
+        \twocolumn
+        \section{Materialeliste:}
+    }
+}
 
 \newenvironment{mats}[2]{
-\newcommand{\mat}[2]{
-\tempnum=##1
-\ifnum\tempnum=1
-\item ##2
-\else
-\item ##1 x ##2
-\fi
+    \newcommand{\mat}[2]{
+        \tempnum=##1
+        \ifnum\tempnum=1
+            \item ##2
+        \else
+            \item ##1 $\times$ ##2
+        \fi
 
-\AtEndDocument{
-\def\lob{#1}
-\def\post{#2}
-\ifx \lob\templob
-	\ifx \post\temppost
-		##1 x ##2 \newline
-	\else
-		\textbf{#2} \\
-		##1 x ##2 \newline
-		\def\temppost{#2}
-	\fi
-\else
-	\subsection{#1}
-		\ifx \post\temppost
-		##1 x ##2 \newline
-	\else
-		\textbf{#2} \\
-		##1 x ##2 \newline
-		\def\temppost{#2}
-	\fi
-	\def\templob{#1}
-\fi
-}
-} 
-\textbf{Materialer til #2}
-\begin{itemize}
-}
-{
-\end{itemize}
+        \AtEndDocument{
+            \def\dag{#1}
+            \def\aktivitet{#2}
+            \ifx \dag\tempdag
+                \ifx \aktivitet\tempaktivitet
+                    ##1 $\times$ ##2 \newline
+                \else
+                    \textbf{#2} \\
+                    ##1 $\times$ ##2 \newline
+                    \def\tempaktivitet{#2}
+                \fi
+            \else
+                \subsection{#1}
+                \ifx \aktivitet\tempaktivitet
+                    ##1 $\times$ ##2 \newline
+                \else
+                    \textbf{#2} \\
+                    ##1 $\times$ ##2 \newline
+                    \def\tempaktivitet{#2}
+                \fi
+                \def\tempdag{#1}
+            \fi
+        }
+    }
+    \textbf{Materialer til #2}
+    \begin{itemize}
+        }
+        {
+    \end{itemize}
 }
