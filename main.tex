@@ -2,41 +2,41 @@
 \input{latex/settings/preamble.tex}
 
 \begin{document}
-\input{latex/forrest/forside.tex}
+\subfile{latex/front_matter/frontpage.tex}
 \pagenumbering{roman}
 \newpage
 \tableofcontents
 \newpage
 \pagenumbering{arabic}
 
-% FORREST
-\input{latex/forrest/spoiler.tex}
-\input{latex/forrest/kontaktinfo.tex} 
+% Front matter
+\subfile{latex/front_matter/spoiler.tex}
+\subfile{latex/front_matter/contact_list.tex} 
 \newpage
-\input{latex/forrest/ansvarlige.tex}
-\input{latex/forrest/aktivitetsskema.tex}
+\subfile{latex/front_matter/responsibilities.tex}
+\subfile{latex/front_matter/masterplan.tex}
 \newpage
-\input{latex/forrest/tjanseskema.tex}
+\subfile{latex/front_matter/duty_table.tex}
 \newpage
-\input{latex/forrest/morgenrejsning.tex}
-\input{latex/forrest/samlettidsplan.tex}
+\subfile{latex/front_matter/morning_glory.tex}
+\subfile{latex/front_matter/overall_schedule.tex}
+
 \newpage
 
-% DAGE
-\input{latex/dage/01_ankomst.tex}
-\input{latex/dage/02_aedrudag.tex}
-\input{latex/dage/03_festaften.tex}
-\input{latex/dage/04_hjemtur.tex}
+% Days
+\subfile{latex/days/01_arrival.tex}
+\subfile{latex/days/02_soberday.tex}
+\subfile{latex/days/03_partynight.tex}
+\subfile{latex/days/04_triphome.tex}
 
-% BAGERST
+% Back matter
 \newpage
-\input{latex/bagerst/tip-en-vektor.tex}
-\input{latex/bagerst/hvem-kan-ikke-hvad.tex}
-\input{latex/bagerst/hvem-sover.tex}
-\input{latex/bagerst/toilettjans.tex}
-\input{latex/bagerst/bufferlege.tex}
+\subfile{latex/back_matter/tip-a-vector.tex}
+\subfile{latex/back_matter/who-can-deal-with-what.tex}
+\subfile{latex/back_matter/who-is-asleep.tex}
+\subfile{latex/back_matter/toilet-duty.tex}
 \newpage
-\input{latex/bagerst/gaaet-i-stykker}
-\newpage
-\input{latex/bagerst/foerstehjaelp.tex}
+\subfile{latex/back_matter/buffer-games.tex}
+\subfile{latex/back_matter/broken-stuff.tex}
+\subfile{latex/back_matter/first-aid.tex}
 \end{document}

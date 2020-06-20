@@ -1,7 +1,7 @@
 # Drejebogsskabelon
-Udarbejdet af Rasmus Aagaard (s164419) i 2019, med udgangspunkt i og inspiration fra skabelon udarbejdet af Henriette Steenhoff (s134869) i 2015. Videre udviklet af Niels Kjær Ersbøll (s183903) i 2020.
+Udarbejdet af Rasmus Aagaard (s164419) i 2019, med udgangspunkt i og inspiration fra skabelon udarbejdet af Henriette Steenhoff (s134869) i 2015.
 
-Link til en ikke-redigerbar version af skabelonen kan findes på [Overleaf](https://www.overleaf.com/read/qzvfgkxhzktb)
+Link til en ikke-redigerbar version af skabelonen kan findes på [Overleaf](https://www.overleaf.com/read/shkkbhkmbsqt)
 
 ## Generelt om skabelonen
 Man vil i denne skabelon finde en masse ting, som er specifikt for rusturen, som skabelonen er bygget op efter. Det er tiltænkt at man selvfølgelig læser det kritisk igennem og retter til, så det passer med tidspunkter, fordeling af ansvar, hvilke dage man er afsted osv.
@@ -14,7 +14,7 @@ Alle farver til navnekoder er taget fra [latexcolor.com/](http://latexcolor.com/
 En idé kan være at give holdene en navnekode, som er deres tværvektors navnekode, bare med modsat store/små bogstaver. Eksempelvis, hvis vektorens navnekode er `\MEME` ville holdets navnekode være `\meme`, eller omvendt.
 
 ## Kontaktinformation
-Udfyld `latex/forrest/kontaktinfo.tex` med relevant information fra [Studiestartswikien](https://studiestartswiki.pf.dk/da:rusturshytter:start). Tag evt. inspiration fra tidligere drejebøger, som kan findes nederst på siden for en given hytte.
+Udfyld `latex/forrest/kontaktinfo.tex` med relevant information fra [Studiestartswikien](https://studiestartswiki.pf.dk/rusturshytter:start). Tag evt. inspiration fra tidligere drejebøger, som kan findes nederst på siden for en given hytte.
 
 ## Tidsplaner
 Der kan findes et eksempel på en tidsplan i filen `latex/dage/01_ankomst/01_tidsplan.tex`. For at indsætte flere linjer på tidsplanen kan man med fordel sætte sin cursor på en linje i tidsplanen, holde `Shift+Alt` nede og trykke på op eller ned piletasterne. Dette vil kopiere den aktuelle linje.
