@@ -1,29 +1,27 @@
-# Drejebogsskabelon
-Udarbejdet af Rasmus Aagaard (s164419) i 2019, med udgangspunkt i og inspiration fra skabelon udarbejdet af Henriette Steenhoff (s134869) i 2015.
+# Playbook template
 
-Link til en ikke-redigerbar version af skabelonen kan findes på [Overleaf](https://www.overleaf.com/read/ykxbtwyfnyzv)
+Developed by Rasmus Aagaard (s164419) in 2019 and further developed by Niels Kjær Ersbøll (s183903) in 2020 based on and inspired by the template created by Henriette Steenhoff (s134869) in 2015
 
-## Generelt om skabelonen
-Man vil i denne skabelon finde en masse ting, som er specifikt for rusturen, som skabelonen er bygget op efter. Det er tiltænkt at man selvfølgelig læser det kritisk igennem og retter til, så det passer med tidspunkter, fordeling af ansvar, hvilke dage man er afsted osv.
+Link to a read-only version of the template can be found on [Overleaf](https://www.overleaf.com/read/ykxbtwyfnyzv)
 
-## Navnekoder
-Navnekoder angives med kommandoen `\navnekode` som tager tre parametre: selve navnekoden, altså hvad du vil skrive for at få det frem, farven og navnet. F.eks. `\navnekode{\DAK}{orange}{Dr Dakkensmirtz}`.
+## General information about the template
 
-Alle farver til navnekoder er taget fra [latexcolor.com/](http://latexcolor.com/)
+In this template you will find a lot of specific things created for the rustrips. The template only exists as a guide and you should of course thoroughly it through and edit it to fit your timestamps, distrubution of responsibilities etc.
 
-En idé kan være at give holdene en navnekode, som er deres tværvektors navnekode, bare med modsat store/små bogstaver. Eksempelvis, hvis vektorens navnekode er `\MEME` ville holdets navnekode være `\meme`, eller omvendt.
+## Code names
 
-## Kontaktinformation
-Udfyld `latex/forrest/kontaktinfo.tex` med relevant information fra [Studiestartswikien](https://studiestartswiki.pf.dk/rusturshytter:start). Tag evt. inspiration fra tidligere drejebøger, som kan findes nederst på siden for en given hytte.
+Codenames are specified by the command `\codename` which takes 3 parameters: the name itself (what you want to write to show it), the colour and the name. Example: `\codename{\DAK}{orange}{Dr Dakkensmirtz}`
 
-## Tidsplaner
-Der kan findes et eksempel på en tidsplan i filen `latex/dage/01_ankomst/01_tidsplan.tex`. For at indsætte flere linjer på tidsplanen kan man med fordel sætte sin cursor på en linje i tidsplanen, holde `Shift+Alt` nede og trykke på op eller ned piletasterne. Dette vil kopiere den aktuelle linje.
+All available colours are taken from [latexcolor.com/](http://latexcolor.com/)
 
-## Materialeliste
-Til at lave materialeliste bruges filen `matlist.tex` som findes i `latex/settings/matlist.tex`. Formatet til dette er således at man bruger `mats`-miljøet (`\begin{mats}{}{}`) og derefter angiver dag og aktivitet, f.eks. `\begin{mats}{Lørdag}{Bustur}`. Herefter angiver man materialer ved brug af `\mat{}{}`, hvor parametrene angiver størrelsesorden og materiale, f.eks. `\mat{750}{Knæklys}`. Eksempler på dette kan findes rundt omkring i drejebogen. `matlist.tex` samler så samtlige materialelister bagerst i drejebogen, så det er nemt at få overblik over, hvad man skal bruge på hvilke dage og til hvilke aktiviteter.
+## Contact information
 
-## Tips til at få ting til at passe ind på én side
-Der forekommer ofte meget lange tabeller, som der ikke er plads til på en enkelt side. Her kan man bruge `\begin{landscape}` til at få siden til at vende horisontalt frem for vertikalt. 
+Fill out `latex/front_matter/contactinfo.tex` with relevant infromation from [Studiestartswikien](https://studiestartswiki.pf.dk/en:rusturshytter:start). You could even take inspiration from previous playbook which should be available at the bottom of the page for the cabin (might not include english playbooks).
 
-Det er også en mulighed at gøre teksten mindre ved brug af `\tiny` eller lignende. Det kan stadig godt læses i praksis og navnekoderne hjælper med at finde ud af hvilket hold det er, når man står med et telefon flashlight kl 23:30 om natten på natløb.
+## Timetable
 
+An example for a timetable can be found in the fle `latex/days/01_arrival/01_timetable.tex`. To inserting multitple lines in the timetable one can with advantage place the cursor on a line in the timetable and hold down the buttons `Shift+Alt` and press either up or down on the keyboard arrows. This will copy the actual line.
+
+## Material list
+
+When making the material list we use commands from the file `matlist.tex` which can be found in `latex/settings/matlst.tex`. You start by creating the `mats`-enviroment (`\begin{mats}{}{}`) and write the date and activity. Example: `\begin{mats}{Saturday}{Bustrip}`. After this you list each material by writing `\mat{}{}`, the parameters of which indicates quantity and material. Example `\mat{750}{Glowsticks}`. Examples of this can be found in the playbook. `matlist.tex` collects all materials at the end of the playbook. This makes it easier to identify which materials to use which day and for which activities.
