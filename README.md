@@ -1,5 +1,5 @@
 # Drejebogsskabelon
-Udarbejdet af Rasmus Aagaard (s164419) i 2019, med udgangspunkt i og inspiration fra skabelon udarbejdet af Henriette Steenhoff (s134869) i 2015.
+Udarbejdet af Rasmus Aagaard (s164419) i 2019, med udgangspunkt i og inspiration fra skabelon udarbejdet af Henriette Steenhoff (s134869) i 2015. Videreudviklet af Niels Kjær Ersbøll (s183903) i 2020.
 
 Link til en ikke-redigerbar version af skabelonen kan findes på [Overleaf](https://www.overleaf.com/read/dgwdvqshrfnb)
 
