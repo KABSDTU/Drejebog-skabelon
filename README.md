@@ -1,27 +1,32 @@
 # Playbook template
+Made by af Rasmus Aagaard (s164419) in 2019, translated by Rasmus Sundin (s196677) and Jonathan Højlev (s194684) in 2022 with inspiration from a template made by 
+Henriette Steenhoff (s134869) in 2015.
 
-Developed by Rasmus Aagaard (s164419) in 2019 and further developed by Niels Kjær Ersbøll (s183903) in 2020 based on and inspired by the template created by Henriette Steenhoff (s134869) in 2015
+Link to non-editable version of the tamplate can be found here: [Overleaf](https://www.overleaf.com/read/bnvybpjpthgq)
 
-Link to a read-only version of the template can be found on [Overleaf](https://www.overleaf.com/read/ykxbtwyfnyzv)
+## Short introduction to the template
 
-## General information about the template
+You can in this template find a lot of things that is specific to the rustrip that the template was made for. You should of course read it through yourself and edit so that it fit your trip. 
 
-In this template you will find a lot of specific things created for the rustrips. The template only exists as a guide and you should of course thoroughly it through and edit it to fit your timestamps, distrubution of responsibilities etc.
+## Namecodes
+Namecodes is given with the command Namecodes and is given by the command `\namnecode` which takes three parametres: the namecode itself, , Ie. the thing you want to you want to write to make the namecode appear in the playbook, the colour and the name. For example 
+`\navnekode{\DAK}{orange}{Dr Dakkensmirtz}`.
 
-## Code names
+All colours to the namecodes are taken from [latexcolor.com/](http://latexcolor.com/)
 
-Codenames are specified by the command `\codename` which takes 3 parameters: the name itself (what you want to write to show it), the colour and the name. Example: `\codename{\DAK}{orange}{Dr Dakkensmirtz}`
+An idea could be to give the teams a namecode that is their crossvector's namecode, just with reverse big/small letters, so for example if the vector's namecode is `\MEME` will the team's name be `\meme`, or reverse.
+Input from Rasmus Sundin, another idea could be to make a namecode so that if it the vector's name, for exmple Dr. Dakkensmirtz use `\navnekode{\DAK}{orange}{Dr Dakkensmirtz}`, but if you want to mention the team make a namecode`\navnekode{\DAKC}{orange}{Phineas and Ferb}` where the C stands for crossteam assuming Phineas and Ferb was the vector's teamname. 
 
-All available colours are taken from [latexcolor.com/](http://latexcolor.com/)
 
-## Contact information
+## Contactinformation
+Fill out`latex/front/contactinfo.tex` with relevant information from [Studiestartswikien](https://studiestartswiki.pf.dk/rusturshytter:start). Take inspiration from old playbooks, they can be found in the bottom on the page for your cabin. 
 
-Fill out `latex/front_matter/contactinfo.tex` with relevant infromation from [Studiestartswikien](https://studiestartswiki.pf.dk/en:rusturshytter:start). You could even take inspiration from previous playbook which should be available at the bottom of the page for the cabin (might not include english playbooks).
+## Timeschedule
+You can find an example on a timeplan in the file `latex/dage/01_ankomst/01_tidsplan.tex`. To insert more lines in the timeplan can you put your mouse on the line in the timetable, tap `Shift+Alt`and tap on the up or down keys on the keyboard. This will copy the line. 
 
-## Timetable
+## Materialslist
+For making the materialsslist use the file `matlist.tex` which can be found in `latex/settings/matlist.tex`. To use this you use `mats` like this;  (`\begin{mats}{}{}`) and from there give day og activities, for example `\begin{mats}{saturday}{bustrip}`. Thereafter can you give the material and the quantity using `\mat{}{}`, where the parameters is the quantity and and the material, like this; `\mat{750}{glowsticks}`. Example of this can be found here and there in the playbook. `matlist.tex` Will show all materials that have been written in with the format mentioned earlier, creating an easy overview of the materials needed, the quantity and whn. 
 
-An example for a timetable can be found in the fle `latex/days/01_arrival/01_timetable.tex`. To inserting multitple lines in the timetable one can with advantage place the cursor on a line in the timetable and hold down the buttons `Shift+Alt` and press either up or down on the keyboard arrows. This will copy the actual line.
+## How to make the materiallist fit into one page
+There will often be very long tables, that there will not be space for on one page. Here you can use `\begin{landscape}` to flip the page to be horizontal instead of vertical. 
 
-## Material list
-
-When making the material list we use commands from the file `matlist.tex` which can be found in `latex/settings/matlst.tex`. You start by creating the `mats`-enviroment (`\begin{mats}{}{}`) and write the date and activity. Example: `\begin{mats}{Saturday}{Bustrip}`. After this you list each material by writing `\mat{}{}`, the parameters of which indicates quantity and material. Example `\mat{750}{Glowsticks}`. Examples of this can be found in the playbook. `matlist.tex` collects all materials at the end of the playbook. This makes it easier to identify which materials to use which day and for which activities.
